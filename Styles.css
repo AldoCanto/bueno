@@ -1,1 +1,14 @@
 /* Proyecto Bueno */
+body {
+    font-family: 'Montserrat', ;
+}
+header {
+    text-align: center;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
