@@ -1,18 +1,24 @@
 /* Proyecto Bueno */
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 body {
-    font-family: 'Montserrat', ;
+    font-family: 'Montserrat' ;
 }
 header {
     text-align: center;
+    margin: 5px;
+    margin-top: 25px;
+}
+nav ul {
+margin-left: 6%;
 }
 nav ul li {
     display: inline-block;
-    margin-left: 2.3%;
-    padding: .5px;
+    margin-top: 20px;
+    margin-left: 2%;
 }
 nav ul li a {
     text-decoration: none;
     color: #7a7a7a;
     font-weight: bold;
+    font-size: 13px;
 }
