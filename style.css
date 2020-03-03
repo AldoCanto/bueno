@@ -3,5 +3,17 @@
 
 body{
     font-family: 'Montserrat' ;
+
+}
+
+nav ul li{
+    display: flex;
+    display: inline;
+    padding: 1%;
     
+
+    
+}
+nav{
+    margin-left: 5%;    
 }
