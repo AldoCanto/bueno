@@ -1,19 +1,102 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
-
-body{
+body {
     font-family: 'Montserrat' ;
-
+}
+header {
+    text-align: center;
+    margin: 5px;
+    margin-top: 25px;
+}
+a:hover {
+    color: #b0c364;
+}
+footer {
+    font-size: 8px;
+    margin-left: 140px;
 }
 
-nav ul li{
+nav ul {
+margin-left: 6%;
+}
+nav ul li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 2%;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #7a7a7a;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+#recetas{
     display: flex;
-    display: inline;
-    padding: 1%;
-    
+    justify-content: center;
 
+}
+
+
+#content{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-around;
+    height: auto;
+    width: 80%;
     
 }
-nav{
-    margin-left: 5%;    
+
+.Tarjeta {
+    height: 140px;
+    width: 260px;
+    display: flex;
+    position: relative;
+    background-color: #ffffff;
+    margin-left: 20px;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+
+
+.Texto{
+   text-align: center;
+   border: 2px solid #b0c364;
+   width: 80%;
+   padding: 10px;
+}
+
+div.Texto p{
+    font-size: 10px;
+}
+
+div.Texto h2{
+    font-size: 20px;
+}
+
+
+#Hamburguesas img{
+    width: 300px;
+    height: 300px;
+    margin-right: 10px;
+    position: absolute;
+}
+
+#Ensalada img{
+    width: 300px;
+    height: 300px;
+    margin-right: 10px;
+    position: absolute;
+}
+
+#Pasta img{
+    width: 300px;
+    height: 300px;
+    position: absolute;
 }
