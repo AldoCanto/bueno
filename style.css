@@ -3,6 +3,9 @@
 body {
     font-family: 'Montserrat' ;
 }
+
+/* head & nav */
+
 header {
     text-align: center;
     margin: 5px;
@@ -31,14 +34,15 @@ nav ul li a {
     font-size: 13px;
 }
 
+/* head & nav */
+
+/* tres recetas */ 
 
 #recetas{
     display: flex;
     justify-content: center;
 
 }
-
-
 #content{
     display: flex;
     flex-direction: row;
@@ -48,7 +52,6 @@ nav ul li a {
     width: 80%;
     
 }
-
 .Tarjeta {
     height: 140px;
     width: 260px;
@@ -62,41 +65,43 @@ nav ul li a {
     
 
 }
-
-
-
 .Texto{
    text-align: center;
    border: 2px solid #b0c364;
    width: 80%;
    padding: 10px;
 }
-
 div.Texto p{
     font-size: 10px;
 }
-
 div.Texto h2{
     font-size: 20px;
 }
-
-
 #Hamburguesas img{
     width: 300px;
     height: 300px;
     margin-right: 10px;
     position: absolute;
 }
-
 #Ensalada img{
     width: 300px;
     height: 300px;
     margin-right: 10px;
     position: absolute;
 }
-
 #Pasta img{
     width: 300px;
     height: 300px;
     position: absolute;
 }
+
+/* tres recetas */ 
+
+/* footer */
+
+footer {
+    font-size: 8px;
+    margin-left: 140px;
+}
+
+/* footer */
