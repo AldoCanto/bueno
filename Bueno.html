@@ -4,6 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="Styles.css">
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script type="text/javascript" src="bueno.js"></script>
+
         <title> Bueno Food Blog </title>
     </head>
     <body>
@@ -21,19 +28,218 @@
             </ul>
         </nav>
         <section id="carousel">
+            <div class="carrusel">
+                <div><img src="img\carousel\wings.jpg" alt="Grilled Buffalo Chicken Wings"></div>
+                <div><img src="img\carousel\pizza.jpg" alt="Buffalo Chicken Pizza"></div>
+                <div><img src="img\carousel\rib.jpeg" alt="Killer Dog Ribs"></div>
+                <div><img src="img\carousel\sushi.jpg" alt="Sushi"></div>
+                <div><img src="img\carousel\pasta.jpg" alt="Four Cheese Garlic White Cream Pasta"></div>
+                <div><img src="img\carousel\burger.jpg" alt="Burgers"></div>
+            </div>
+            <div class="carcardborder">
+            <div class="carcard">
 
+                <p>
+                    category
+                </p>
+                <h3>
+                    recetas nombre
+                </h3>
+                <p class="uno">
+                    fecha / autor
+                </p>
+
+            </div>
+            </div>
+            <div class="clear">
+
+            </div>
         </section>
         <section id="recetas">
+            <div id="content">
+                <div id="Hamburguesas" onclick="location.href='#';" style="cursor: pointer;">
+                    <img src="img/Hamburguesas.jpg" alt="Hamburguesa"/>
+                    <div class = "Tarjeta" onclick="location.href='#';" style="cursor: pointer;">
+                        <div class = "Texto" onclick="location.href='#';" style="cursor: pointer;">
+                            <p>THE BEST</p>
+                            <h2>Hamburguesa</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear-float"></div>
+    
+                <div id= "Ensalada" onclick="location.href='#';" style="cursor: pointer;">
+                    <img src="img/Ensalada.jpg" alt="Ensalada"/>
+                    <div class = "Tarjeta" onclick="location.href='#';" style="cursor: pointer;">
+                        <div class = "Texto" onclick="location.href='#';" style="cursor: pointer;">
+                            <p>THE BEST</p>
+                            <h2>Ensalada</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear-float"></div>
+    
+                <div id = "Pasta" onclick="location.href='#';" style="cursor: pointer;">
+                    <img src="img/Pasta.jpg" alt="Pasta"/>
+                    <div class = "Tarjeta" onclick="location.href='#';" style="cursor: pointer;">
+                        <div class = "Texto" onclick="location.href='#';" style="cursor: pointer;">
+                            <p>THE BEST</p>
+                            <h2>Pasta</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear-float"></div>
+    
+            </div>
 
         </section>
         <section id="last_two_added">
+            <div class="last_two_added">
+            <div class="cerebro">
+                <div class="imagen1">
+                <img src="img/descarga4.png" alt="text">
+                </div>
+                    <div class="rojo">
+                    <p class="verde">THE BEST</p>
+                    <h1>LASAÑA</h1>
+                    <p class="azul">MARZO 18/Equipo 4</p>
+                    <p class="two">La lasaña es posiblemente uno de los platos más populares de la cocina mundial. También es uno de nuestros platos preparados más exitosos, no en vano, disponemos de una amplia gama de lasañas congeladas, todas ellas deliciosas combinaciones de pasta fresca con riquísimos rellenos, desde los más tradicionales de boloñesa, a los más nuevos como el de 4 quesos o el vegetal. Incluso en Maheso elaboramos una lasaña sin gluten.</p>
+                    <button class="button">READ MORE</button>
+                    </div>
+                    <div class="clear-float"></div>
+            </div>  
+            <div class="pinki">
+                <div class="imagen2">
+                <img src="img/descarga5.png" alt="text">
+                </div>
+                    <div class="amarillo">
+                    <P class="verde">THE BEST</P>
+                    <h2>POZOLE</h2>
+                    <P class="azul">MARZO 18/ Equipo 4</P>
+                    <p class="one">El pozole es un plato tradicional mesoamericano, un caldo hecho a base de granos de maíz de un tipo conocido comúnmente como cacahuazintle, a la que se agrega, según la región, carne de pollo o de cerdo como ingrediente secundario.1​ De esta preparación básica existen variaciones por todo el territorio mexicano y algunas cocinas de América Central.</p>
+                    <button class="button">READ MORE</button>   
+                    </div>
 
+                    <div class="clear-float"></div>  
+            </div>
+        </div>
         </section>
         <section id="mas_recetas">
+            <div class="General">
 
+        
+                <!-- Cards lado derecho-->
+                
+                        <div class="izquierda">
+                
+                            <div class="card-izquierda">
+                                <div class="card-izquierda-img">
+                                    <img src="img/Burritos.jpg" alt="Burritos" onclick="location.href='#'" style="cursor: pointer">
+                                </div>
+                                <div class="card-izquierda-contenido">
+                                    <p class="thebest">THE BEST</p>
+                                    <h1 onclick="location.href='#'" style="cursor: pointer">Burritos de carne con pimiento<br>
+                                    <time datetime="2020-02-25 09:04">MARZO 13, 2020 / BY EQUIPO 4</time>
+                                    </h1>
+                                    <p>Se preparan a partir de tortillas asadas de maíz o de trigo, rellenas con carne o pollo y con una variedad de vegetales salteados en los que suele destacar el pimiento rojo.</p>
+                                </div>
+                                <div class="clear-float"></div>
+                            </div>
+                            <div class="card-izquierda">
+                                <div class="card-izquierda-img">
+                                    <img src="img/Chiles.jpg" alt="Chiles"onclick="location.href='#'" style="cursor: pointer">
+                                </div>
+                                <div class="card-izquierda-contenido">
+                                    <p class="thebest">THE BEST</p>
+                                    <h1 onclick="location.href='#'" style="cursor: pointer">Chiles en nogada <br>
+                                        <time datetime="2020-02-25 09:04">MARZO 13, 2020 / BY EQUIPO 4</time>
+                                    </h1>
+                                    
+                                    <p>Su preparación consta de chile poblano relleno con guisado de picadillo y frutos mixtos, recubierto con crema de nuez y salteado con granada en trozos y perejil.</p>
+                                </div>
+                                <div class="clear-float"></div>
+                            </div>
+                            <div class="card-izquierda">
+                                <div class="card-izquierda-img">
+                                    <img src="img/Enchiladas.jpg" alt="Enchiladas" onclick="location.href='#'" style="cursor: pointer">
+                                </div>
+                                <div class="card-izquierda-contenido">
+                                    <p class="thebest">THE BEST</p>
+                                    <h1 onclick="location.href='#'" style="cursor: pointer">Enchiladas <br>
+                                        <time datetime="2020-02-25 09:04">MARZO 13, 2020 / BY EQUIPO 4</time>
+                                    </h1>                    
+                                    <p>Las enchiladas es uno de los platillos cuyos ingredientes en la preparación pueden variar con mayor frecuencia, todo dependerá del lugar donde las sirvan, siempre y cuando se respete la santa trinidad: tortilla de maíz, chile y queso.</p>
+                                </div>
+                                <div class="clear-float"></div>
+                            </div>
+                
+                        </div>
+                    
+                <!-- Cards lado derecho-->
+                
+                
+                        <div class="derecha">
+                
+                            <div class="card-derecha" onclick="location.href='#'" style="cursor: pointer">
+                                <div class="card-derecha-img">
+                                    <img src="img/Pescado.jpg" alt="Pescado">
+                                </div>
+                                <div class="card-derecha-contenido">
+                                    <h2>Pescado a la Tikin</h2>
+                                    <time datetime="2020-02-25 09:04">MARZO 13, 2020 / BY EQUIPO 4</time>
+                                </div>
+                                <div class="clear-float"></div>
+                            </div>
+                            
+                            <div class="card-derecha" alt="Pozole" onclick="location.href='#'" style="cursor: pointer">
+                                <div class="card-derecha-img">
+                                    <img src="img/Pozole.jpg">
+                                </div>
+                                <div class="card-derecha-contenido">
+                                    <h2>Pozole</h2>
+                                    <time datetime="2020-02-25 09:04">MARZO 13, 2020 / BY EQUIPO 4</time>
+                                </div>
+                                <div class="clear-float"></div>
+                            </div>
+                            
+                            <div class="card-derecha" onclick="location.href='#'" style="cursor: pointer">
+                                <div class="card-derecha-img">
+                                    <img src="img/Quesadillas.jpg" alt="Quesadillas" onclick="location.href='#'" style="cursor: pointer">
+                                </div>
+                                <div class="card-derecha-contenido">
+                                    <h2>Quesadillas</h2>
+                                    <time datetime="2020-02-25 09:04">MARZO 13, 2020 / BY EQUIPO 4</time>
+                                </div>
+                                <div class="clear-float"></div>
+                            </div>
+                            
+                            <div class="card-derecha" onclick="location.href='#'" style="cursor: pointer">
+                                <div class="card-derecha-img">
+                                    <img src="img/Tacos_Dorados.jpg" alt="Tacos_Dorados" onclick="location.href='#'" style="cursor: pointer" >
+                                </div>
+                                <div class="card-derecha-contenido">
+                                    <h2>Tacos Dorados</h2>
+                                    <time datetime="2020-02-25 09:04">MARZO 13, 2020 / BY EQUIPO 4</time>
+                                </div>
+                                <div class="clear-float"></div>
+                            </div>
+                            
+                            <div class="card-derecha" onclick="location.href='#'" style="cursor: pointer">
+                                <div class="card-derecha-img">
+                                    <img src="img/TacosSuadero.jpg" alt="TacosSuadero" onclick="location.href='#'" style="cursor: pointer">
+                                </div>
+                                <div class="card-derecha-contenido">
+                                    <h2>Tacos de Suadero</h2>
+                                    <time datetime="2020-02-25 09:04">MARZO 13, 2020 / BY EQUIPO 4</time>
+                                </div>
+                                <div class="clear-float"></div>
+                            </div>
+                
+                        </div>
+                    </div>
         </section>
         <footer>
-
+            Copyright ©2020
         </footer>
     </body>
 </html>
