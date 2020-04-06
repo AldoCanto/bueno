@@ -1,213 +1,426 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="Styles.css">
-        <title> Bueno Food Blog </title>
-    </head>
-    <body>
-        <header>
-            <a href="Bueno.html"><img src="assets\logo.png" alt="Bueno Food Blogs"></a>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="Bueno.html"> Home </a></li>
-                <li><a href="life.html"> Life&Tips </a></li>
-                <li><a href="in.html"> En 1.2.3. </a></li>
-                <li><a href="health.html"> Healthy </a></li>
-                <li><a href="postres.html"> Postres Y Bebidas </a></li>
-                <li><a href="slow.html"> Slow Food </a></li>
-            </ul>
-        </nav>
-        <section id="carousel">
-
-        </section>
-        <section id="recetas">
-            <div id="content">
-                <div id="Hamburguesas" onclick="location.href='#';" style="cursor: pointer;">
-                    <img src="img/Hamburguesas.jpg" alt="Hamburguesa"/>
-                    <div class = "Tarjeta" onclick="location.href='#';" style="cursor: pointer;">
-                        <div class = "Texto" onclick="location.href='#';" style="cursor: pointer;">
-                            <p>THE BEST</p>
-                            <h2>Hamburguesa</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="clear-float"></div>
+/* Proyecto Bueno */
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+body {
+    font-family: 'Montserrat' ;
+}
+/* aqui inicia el header*/
+header {
+    text-align: center;
+    margin: 5px;
+    margin-top: 25px;
+}
+a:hover {
+    color: #b0c364;
+}
+footer {
+    font-size: 8px;
+    margin-left: 140px;
+}
+nav ul {
+margin-left: 6%;
+}
+nav ul li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 2%;
+    margin-bottom: 200px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #7a7a7a;
+    font-weight: bold;
+    font-size: 13px;
     
-                <div id= "Ensalada" onclick="location.href='#';" style="cursor: pointer;">
-                    <img src="img/Ensalada.jpg" alt="Ensalada"/>
-                    <div class = "Tarjeta" onclick="location.href='#';" style="cursor: pointer;">
-                        <div class = "Texto" onclick="location.href='#';" style="cursor: pointer;">
-                            <p>THE BEST</p>
-                            <h2>Ensalada</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="clear-float"></div>
+}
+/* head & nav */
+/* Carousel */
+
+.carcardborder {
+    display: flex;
+    background-color: white;
+    width: 20%;
+    height: 45%;
+    padding: 15px;
+    margin-top: -405px;
+    margin-bottom: 100%;
+    margin-left: 500px;
+    position: absolute;
+}
+div.carcardborder div.carcard {
+    text-align: center;
+    align-content: center;
+    border: 2.5px solid #b0c364;
+    border-bottom: none;
+    padding: 10px;
+    padding-top: 80px;
+    width: 90%;
+    height: 60%;
+}
+.slick-prev {
+    color: white;
+    background-color: #b0c364;
+    text-align: center;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 59px;
+    display: flex;
+    margin-bottom: -220px;
+    position: relative;
+    z-index: 1;
+}
+.slick-next {
+    color: white;
+    background-color: #b0c364;
+    text-align: center;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 87.7%;
+    margin-top: -225px;
+    margin-bottom: 220px;
+    display: flex;  
+    position: relative;
+    z-index: 1;
+}
+div.carrusel div img {
+    width: 370px;
+    height: 410px;
+    position: relative;
+}
+div.carcard p{
+     font-size: 10px;
+     font-weight: bold;
+     color: #b0c364;
+}
+div.carcard h3{
+     font-size: 20px;
+}
+div.carcard p.uno{
+    font-size: 10px;
+    color: #7a7a7a;
+}
+
+/* fin Carousel */
+
+/* tres recetas */ 
+#recetas{
+    display: flex;
+    justify-content: center;
+
+}
+#content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: auto;
+    width: 82%;
     
-                <div id = "Pasta" onclick="location.href='#';" style="cursor: pointer;">
-                    <img src="img/Pasta.jpg" alt="Pasta"/>
-                    <div class = "Tarjeta" onclick="location.href='#';" style="cursor: pointer;">
-                        <div class = "Texto" onclick="location.href='#';" style="cursor: pointer;">
-                            <p>THE BEST</p>
-                            <h2>Pasta</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="clear-float"></div>
+}
+
+.Tarjeta {
+    height: 130px;
+    width: 280px;
+    display: flex;
+    position: relative;
+    background-color: #ffffff;
+    margin-left: 30px;
+    margin-top: 110px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
     
-            </div>
 
-        </section>
-        <section id="last_two_added">
-            <div class="last_two_added">
-            <div class="cerebro">
-                <div class="imagen1">
-                <img src="img/descarga4.png" alt="text">
-                </div>
-                    <div class="rojo">
-                    <p class="verde">THE BEST</p>
-                    <h1>LASAÑA</h1>
-                    <p class="azul">MARZO 18/Equipo 4</p>
-                    <p class="two">La lasaña es posiblemente uno de los platos más populares de la cocina mundial. También es uno de nuestros platos preparados más exitosos, no en vano, disponemos de una amplia gama de lasañas congeladas, todas ellas deliciosas combinaciones de pasta fresca con riquísimos rellenos, desde los más tradicionales de boloñesa, a los más nuevos como el de 4 quesos o el vegetal. Incluso en Maheso elaboramos una lasaña sin gluten.</p>
-                    <button class="button">READ MORE</button>
-                    </div>
-                    <div class="clear-float"></div>
-            </div>  
-            <div class="pinki">
-                <div class="imagen2">
-                <img src="img/descarga5.png" alt="text">
-                </div>
-                    <div class="amarillo">
-                    <P class="verde">THE BEST</P>
-                    <h2>POZOLE</h2>
-                    <P class="azul">MARZO 18/ Equipo 4</P>
-                    <p class="one">El pozole es un plato tradicional mesoamericano, un caldo hecho a base de granos de maíz de un tipo conocido comúnmente como cacahuazintle, a la que se agrega, según la región, carne de pollo o de cerdo como ingrediente secundario.1​ De esta preparación básica existen variaciones por todo el territorio mexicano y algunas cocinas de América Central.</p>
-                    <button class="button">READ MORE</button>   
-                    </div>
 
-                    <div class="clear-float"></div>  
-            </div>
-        </div>
-        </section>
-        <section id="mas_recetas">
-            <div class="General">
+.Texto{
+   text-align: center;
+   border: 2px solid #b0c364;
+   width: 80%;
+   padding: 10px;
+}
 
-        
-                <!-- Cards lado derecho-->
-                
-                        <div class="izquierda">
-                
-                            <div class="card-izquierda">
-                                <div class="card-izquierda-img">
-                                    <img src="img/Burritos.jpg" alt="Burritos" onclick="location.href='#'" style="cursor: pointer">
-                                </div>
-                                <div class="card-izquierda-contenido">
-                                    <p class="thebest">THE BEST</p>
-                                    <h1 onclick="location.href='#'" style="cursor: pointer">Burritos de carne con pimiento<br>
-                                    <time datetime="2020-02-25 09:04">MARZO 13, 2020 / BY EQUIPO 4</time>
-                                    </h1>
-                                    <p>Se preparan a partir de tortillas asadas de maíz o de trigo, rellenas con carne o pollo y con una variedad de vegetales salteados en los que suele destacar el pimiento rojo.</p>
-                                </div>
-                                <div class="clear-float"></div>
-                            </div>
-                            <div class="card-izquierda">
-                                <div class="card-izquierda-img">
-                                    <img src="img/Chiles.jpg" alt="Chiles"onclick="location.href='#'" style="cursor: pointer">
-                                </div>
-                                <div class="card-izquierda-contenido">
-                                    <p class="thebest">THE BEST</p>
-                                    <h1 onclick="location.href='#'" style="cursor: pointer">Chiles en nogada <br>
-                                        <time datetime="2020-02-25 09:04">MARZO 13, 2020 / BY EQUIPO 4</time>
-                                    </h1>
-                                    
-                                    <p>Su preparación consta de chile poblano relleno con guisado de picadillo y frutos mixtos, recubierto con crema de nuez y salteado con granada en trozos y perejil.</p>
-                                </div>
-                                <div class="clear-float"></div>
-                            </div>
-                            <div class="card-izquierda">
-                                <div class="card-izquierda-img">
-                                    <img src="img/Enchiladas.jpg" alt="Enchiladas" onclick="location.href='#'" style="cursor: pointer">
-                                </div>
-                                <div class="card-izquierda-contenido">
-                                    <p class="thebest">THE BEST</p>
-                                    <h1 onclick="location.href='#'" style="cursor: pointer">Enchiladas <br>
-                                        <time datetime="2020-02-25 09:04">MARZO 13, 2020 / BY EQUIPO 4</time>
-                                    </h1>                    
-                                    <p>Las enchiladas es uno de los platillos cuyos ingredientes en la preparación pueden variar con mayor frecuencia, todo dependerá del lugar donde las sirvan, siempre y cuando se respete la santa trinidad: tortilla de maíz, chile y queso.</p>
-                                </div>
-                                <div class="clear-float"></div>
-                            </div>
-                
-                        </div>
-                    
-                <!-- Cards lado derecho-->
-                
-                
-                        <div class="derecha">
-                
-                            <div class="card-derecha" onclick="location.href='#'" style="cursor: pointer">
-                                <div class="card-derecha-img">
-                                    <img src="img/Pescado.jpg" alt="Pescado">
-                                </div>
-                                <div class="card-derecha-contenido">
-                                    <h2>Pescado a la Tikin</h2>
-                                    <time datetime="2020-02-25 09:04">MARZO 13, 2020 / BY EQUIPO 4</time>
-                                </div>
-                                <div class="clear-float"></div>
-                            </div>
-                            
-                            <div class="card-derecha" alt="Pozole" onclick="location.href='#'" style="cursor: pointer">
-                                <div class="card-derecha-img">
-                                    <img src="img/Pozole.jpg">
-                                </div>
-                                <div class="card-derecha-contenido">
-                                    <h2>Pozole</h2>
-                                    <time datetime="2020-02-25 09:04">MARZO 13, 2020 / BY EQUIPO 4</time>
-                                </div>
-                                <div class="clear-float"></div>
-                            </div>
-                            
-                            <div class="card-derecha" onclick="location.href='#'" style="cursor: pointer">
-                                <div class="card-derecha-img">
-                                    <img src="img/Quesadillas.jpg" alt="Quesadillas" onclick="location.href='#'" style="cursor: pointer">
-                                </div>
-                                <div class="card-derecha-contenido">
-                                    <h2>Quesadillas</h2>
-                                    <time datetime="2020-02-25 09:04">MARZO 13, 2020 / BY EQUIPO 4</time>
-                                </div>
-                                <div class="clear-float"></div>
-                            </div>
-                            
-                            <div class="card-derecha" onclick="location.href='#'" style="cursor: pointer">
-                                <div class="card-derecha-img">
-                                    <img src="img/Tacos_Dorados.jpg" alt="Tacos_Dorados" onclick="location.href='#'" style="cursor: pointer" >
-                                </div>
-                                <div class="card-derecha-contenido">
-                                    <h2>Tacos Dorados</h2>
-                                    <time datetime="2020-02-25 09:04">MARZO 13, 2020 / BY EQUIPO 4</time>
-                                </div>
-                                <div class="clear-float"></div>
-                            </div>
-                            
-                            <div class="card-derecha" onclick="location.href='#'" style="cursor: pointer">
-                                <div class="card-derecha-img">
-                                    <img src="img/TacosSuadero.jpg" alt="TacosSuadero" onclick="location.href='#'" style="cursor: pointer">
-                                </div>
-                                <div class="card-derecha-contenido">
-                                    <h2>Tacos de Suadero</h2>
-                                    <time datetime="2020-02-25 09:04">MARZO 13, 2020 / BY EQUIPO 4</time>
-                                </div>
-                                <div class="clear-float"></div>
-                            </div>
-                
-                        </div>
-                    </div>
-        </section>
-        <footer>
-            Copyright ©2020
-        </footer>
-    </body>
-</html>
+div.Texto p{
+    font-size: 10px;
+}
+
+div.Texto h2{
+    font-size: 20px;
+}
+
+
+#Hamburguesas img{
+    width: 340px;
+    height: 340px;
+    margin-right: 10px;
+    position: absolute;
+    
+}
+
+#Ensalada img{
+    width: 340px;
+    height: 340px;
+    margin-right: 10px;
+    position: absolute;
+}
+
+#Pasta img{
+    width: 340px;
+    height: 340px;
+    position: absolute;
+}
+
+div.clear-float {
+    clear: both;
+}
+
+/*terminan las 3 cards*/
+
+/* inician las 2 cards izq-der*/
+
+
+#last_two_added{
+    display: flex;
+    justify-content: center;
+}
+.last_two_added {
+    width: 80%;
+    box-sizing: border-box;
+}
+div.imagen1 {
+    width: 50%;
+}
+div.imagen2 {
+    width: 50%;
+}
+div.imagen1 img {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-bottom: 50px;
+}
+div.imagen2 img {
+    width: 100%;
+    height: auto;
+    float: right;
+    margin-bottom: 50px;
+}
+div.cerebro{
+    height: auto;
+    width: 100%;  
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+div.pinki{
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-bottom: 50px;
+}
+
+p.verde {
+    color: #b0c364;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+div.pinki img {
+    width: 100%;
+    height: 550px;
+    margin-top: 20px; 
+}
+div.cerebro img {
+    width: 100%;
+    height: 550px;
+    margin-top: 20px; 
+}
+p.two {
+    text-align: center;
+    line-height: 30px;
+    height: auto;
+    color: #7a7a7a;
+}
+h1 {
+    text-align: center;
+}
+p.azul {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+p.one {
+    text-align: center;
+    line-height: 30px;
+    color: #7a7a7a;
+}
+div.rojo {
+    width: 50%;
+    height: auto;
+    padding: 0px;
+    float: right;
+    margin-left: 30px;
+}
+div.amarillo {
+  padding: 0px;
+    width: 50%;
+    height: auto;
+    float: left;
+    margin-right: 30px;
+}
+.button {
+    background-color: #b0c364; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 40%;
+  }
+  div.clear-float{
+      clear: both;
+  }
+
+/* Cards lado Izquierdo*/
+
+
+#mas_recetas{
+    display: flex;
+    justify-content: center;
+    
+}
+div.General{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-items: flex-start
+}
+
+div.izquierda{
+    width: 75%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    box-sizing: border-box;
+    
+}
+
+
+div.card-izquierda {
+    display: flex;
+    background-color: #FFFFFF;
+    
+    margin: 1%;
+    margin-bottom: 3%;
+}
+div.card-izquierda div.card-izquierda-img {
+    display: flex;
+    width: 40%;
+    float: left;
+    
+}
+div.card-izquierda div.card-izquierda-img img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    
+}
+div.card-izquierda div.card-izquierda-contenido {    
+    width: 60%;
+    float: right;
+    padding: 0 5%;
+    box-sizing: border-box;
+    
+}
+
+div.card-izquierda div.card-izquierda-contenido p.thebest {
+    font-weight: bold;
+    font-size: 14px;
+    color: #b0c364;;
+}
+
+
+div.card-izquierda div.card-izquierda-contenido h1 {
+    font-weight: bolder;
+    font-size: 24px;
+    
+}
+
+div.card-izquierda div.card-izquierda-contenido time {
+    font-size: 14px;
+    color: #7a7a7a;
+    font-weight: bold;
+}
+
+div.card-izquierda div.card-izquierda-contenido p {
+    font-size: 15px;
+    color: #7a7a7a;
+}
+
+/* Cards lado derecho*/
+
+div.derecha{
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    box-sizing: border-box;    
+}
+
+
+div.card-derecha {  
+    background-color: #FFFFFF;
+    margin-top: 5%;
+    
+}
+div.card-derecha div.card-derecha-img {
+    width: 30%;
+    float: left;
+    
+}
+div.card-derecha div.card-derecha-img img {
+    width: 100%;
+    height: auto;
+}
+div.card-derecha div.card-derecha-contenido {
+    width: 70%;
+    float: right;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+div.card-derecha div.card-derecha-contenido time {
+    display: flex;
+    align-content: center;
+    font-size: 8px;
+    color: #7a7a7a;
+    font-weight: bold;
+    
+}
+div.card-derecha div.card-derecha-contenido h2 {
+    margin-top: 0px;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+
+
+div.clear-float {
+    clear: both;
+}
+/* footer */
+
+footer {
+    font-size: 15px;
+    margin-left: 140px;
+}
+
+/* footer */
