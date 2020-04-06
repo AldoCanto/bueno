@@ -345,7 +345,8 @@ div.card-izquierda div.card-izquierda-contenido {
 div.card-izquierda div.card-izquierda-contenido p.thebest {
     font-weight: bold;
     font-size: 14px;
-    color: #b0c364;;
+    color: #b0c364;
+    text-align: center;
 }
 
 
