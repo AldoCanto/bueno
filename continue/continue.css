@@ -2,11 +2,42 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+/*header*/
+header {
+    text-align: center;
+    margin: 5px;
+    margin-top: 25px;
+}
+a:hover {
+    color: #b0c364;
+}
+footer {
+    font-size: 8px;
+    margin-left: 140px;
+}
+nav ul {
+margin-left: 6%;
+}
+nav ul li {
+    display: flex;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 2%;
+    margin-bottom: 70px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #7a7a7a;
+    font-weight: bold;
+    font-size: 13px;
+    
+}
+/*header+++++++++++*/
 .one {
     width: 49%;
 }
 .imagen1 img {
-    width: 85%;
+    width: 100%;
     height: auto;
     text-align: center;
     padding-left: 2%;
@@ -47,4 +78,65 @@ body{
     padding-left: 2%;
     padding-right: 2%;
     font-weight: bold;
+}
+
+/* ++++++++++++++++++*/
+
+
+/*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
+
+/*aqui inicia la card verde*/
+/*.container {
+    display: flex;
+    flex-direction: row;
+}*/
+.todo {
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+}
+div .card-verde{
+    background-color: #b0c364; 
+    height: 250px;
+    width: 250px;
+    color: white;
+
+}
+div .card-verde h3 {
+    text-align: center;
+}
+div .par1 {
+    border-bottom: 3px rgba(73, 73, 73, 0.151) solid;
+    text-align: center;
+}
+
+div .par2 {
+    border-bottom: 3px rgba(73, 73, 73, 0.151) solid;
+    text-align: center;
+}
+
+div .par3 {
+    text-align: center;
+}
+
+/*aqui inicia la card gris*/
+div.card-gris{
+    background-color: rgb(221, 221, 221);
+    height: 300px;
+    width: 250px;
+}
+div .renglones {
+    border-bottom: 3px rgba(73, 73, 73, 0.151) solid;
+}
+/*+++++++++++Empieza la tercera columna+++*/
+.perfil{
+    width: 300px;
+    height: auto;
+}
+footer{
+    clear: both;
 }
