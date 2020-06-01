@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+/*header*/
+header {
+    text-align: center;
+    margin: 5px;
+    margin-top: 25px;
+}
+a:hover {
+    color: #b0c364;
+}
+footer {
+    font-size: 8px;
+    margin-left: 140px;
+}
+nav ul {
+margin-left: 6%;
+}
+nav ul li {
+    display: flex;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 2%;
+    margin-bottom: 70px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #7a7a7a;
+    font-weight: bold;
+    font-size: 13px;
+    
+}
+/*header+++++++++++*/
+.todo{
+    display: flex;
+    justify-content: center;
+
+}
+.ajustador{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: auto;
+    justify-content: space-between;
+    box-sizing: border-box;
+    /*border: 1px solid black;*/
+}
+
+.one {
+    width: 40%;
+}
+.imagen1 img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 8%;
+}
+.a {
+
+    width: auto;
+    height: auto;
+}
+.a h1 {
+    color: #b0c364;
+    font-weight: bold;
+}
+.a time{
+    color: #7a7a7a;
+    font-weight: bold;
+}
+.b p {
+    line-height: 30px;
+    color: #7a7a7a;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-weight: bold;
+}
+.c p{
+    line-height: 30px;
+    color: #7a7a7a;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-weight: bold;
+}
+.d p{
+    line-height: 30px;
+    color: #7a7a7a; 
+    padding-left: 2%;
+    padding-right: 2%;
+    font-weight: bold;
+}
+
+/* ++++ Aqui inicia la segunda columna ++++*/
+
+
+div .card-verde{
+    margin-top: -20px;
+    background-color: #b0c364; 
+    height: auto;
+    width: 100%;
+    color: white;
+}
+.container-verde{
+    padding: 10%;
+    background-color: #b0c364; 
+    margin-bottom: 30px;
+}
+div .card-verde h3 {
+    padding: 10%;
+    margin-top: 20px;
+}
+div .par1 {
+    border-bottom: 3px rgba(73, 73, 73, 0.151) solid;
+}
+
+div.par1 p{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+}
+div p {
+    font-weight: bold;
+}
+div .par2 {
+    border-bottom: 3px rgba(73, 73, 73, 0.151) solid;
+    display: flex;
+    align-items: center;
+}
+
+div.par2 p{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+}
+
+div.par3 p{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+}
+
+
+/*aqui inicia la card gris*/
+div.card-gris{
+    background-color: #ebf4f6;
+    height: auto;
+    width: 100%;
+}
+.container-gris{
+    padding: 10%;
+    background-color: #ebf4f6; 
+}
+div .card-gris h3 {
+    margin-left: 10%;
+    margin-top: 5px;
+    margin-bottom: 20%;
+    font-weight: bold;
+}
+div .renglones {
+    border-bottom: 3px rgba(73, 73, 73, 0.151) solid;
+}
+div.renglones p{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-weight: normal;
+    color: #7a7a7a;
+}
+.seccion2{
+    width: 30%;
+
+}
+
+/*+++++++++++Empieza la tercera columna+++*/
+.seccion3{
+    width: 20%;
+    height: auto;
+}
+.fondo{
+    width: 100%;
+    display: flex;
+    height: auto;
+    background-image: url("img/puntitos.jpeg");
+    padding: 10%;
+    margin-bottom: 10%;
+}
+.fondo img{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.modelo{
+    width: 80%;
+    height: auto;
+}
+.modelo img{
+    width: 100%;
+   height: auto;
+   border-radius: 50%;
+}
+.descripcion p{
+    text-align: center;
+    color: #7a7a7a;
+    line-height: 30px;
+}
+.descripcion p span {
+    font-weight: bold;
+    color: black;
+}
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/*Aqui inician las cards de lado derecho*/
+
+div.derecha{
+    width: 210%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;    
+}
+
+
+div.card-derecha {  
+    background-color: #FFFFFF;
+    margin-top: 5%;
+    
+}
+div.card-derecha div.card-derecha-img {
+    width: 20%;
+    float: left;
+    
+}
+div.card-derecha div.card-derecha-img img {
+    width: 100%;
+    height: auto;
+}
+div.card-derecha div.card-derecha-contenido {
+    width: 80%;
+    float: right;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+div.card-derecha div.card-derecha-contenido time {
+    display: flex;
+    align-content: center;
+    font-size: 8px;
+    color: #7a7a7a;
+    font-weight: bold;
+    
+}
+div.card-derecha div.card-derecha-contenido h2 {
+    margin-top: 0px;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+
+
+
+div.clear-float {
+    clear: both;
+}
+
+/*Aqui terminan*/
+footer{
+    clear: both;
+}
+
+
+
+
+
+/* Version Mobile*/
+
+@media only screen and (max-width: 768px) {
+
+.one{
+    width: 100%;
+
+}
+
+.seccion2{
+    width: 100%;
+
+}
+
+.seccion3{
+    width: 100%;
+
+}
+
+.ajustador{
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.fondo{
+    width: 80%;
+}
+
+.container-gris{
+    margin-bottom: 30px;
+}
+
+}

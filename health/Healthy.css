@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+/* aqui inicia el header*/
+header {
+    text-align: center;
+    margin: 5px;
+    margin-top: 25px;
+}
+a:hover {
+    color: #b0c364;
+    
+}
+p a:hover {
+    color: #ffffff;
+    
+}
+
+p a {
+    text-decoration: none;
+    color: #7a7a7a;
+}
+
+div.Cuadrado:hover{
+    text-decoration: none;
+    background-color: #b0c364;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+footer {
+    font-size: 8px;
+    margin-left: 140px;
+}
+nav ul {
+margin-left: 6%;
+}
+nav ul li {
+    display: flex;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 2%;
+    margin-bottom: 70px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #7a7a7a;
+    font-weight: bold;
+    font-size: 13px;
+    
+}
+/* head & nav */
+
+/* Cards lado Izquierdo*/
+
+
+#mas_recetas{
+    display: flex;
+    justify-content: center;
+    
+}
+div.General{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-items: flex-start
+}
+
+div.izquierda{
+    width: 75%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    box-sizing: border-box;
+    
+}
+
+
+div.card-izquierda {
+    background-color: #FFFFFF;
+    margin: 1%;
+    margin-bottom: 3%;
+}
+div.card-izquierda div.card-izquierda-img {
+    
+    width: 40%;
+    float: left;
+    
+}
+div.card-izquierda div.card-izquierda-img img {
+    width: 100%;
+    height: auto;
+    
+}
+div.card-izquierda div.card-izquierda-contenido {    
+    width: 60%;
+    float: right;
+    padding: 0 5%;
+    box-sizing: border-box;
+    
+    
+}
+
+div.card-izquierda div.card-izquierda-contenido p.thebest {
+    font-weight: bold;
+    font-size: 14px;
+    color: #b0c364;;
+}
+
+
+div.card-izquierda div.card-izquierda-contenido h1 {
+    font-weight: bolder;
+    font-size: 24px;
+    
+}
+
+div.card-izquierda div.card-izquierda-contenido time {
+    font-size: 14px;
+    color: #7a7a7a;
+    font-weight: bold;
+}
+
+div.card-izquierda div.card-izquierda-contenido p {
+    font-size: 15px;
+    color: #7a7a7a;
+}
+
+/* Cards lado derecho*/
+
+div.derecha{
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    box-sizing: border-box;    
+}
+
+
+div.card-derecha {  
+    background-color: #FFFFFF;
+    margin-top: 5%;
+    
+}
+div.card-derecha div.card-derecha-img {
+    width: 30%;
+    float: left;
+    
+}
+div.card-derecha div.card-derecha-img img {
+    width: 100%;
+    height: auto;
+}
+div.card-derecha div.card-derecha-contenido {
+    width: 70%;
+    float: right;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+div.card-derecha div.card-derecha-contenido time {
+    display: flex;
+    align-content: center;
+    font-size: 8px;
+    color: #7a7a7a;
+    font-weight: bold;
+    
+}
+div.card-derecha div.card-derecha-contenido h2 {
+    margin-top: 0px;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+
+
+div.clear-float {
+    clear: both;
+}
+
+/* footer */
+
+footer {
+    font-size: 15px;
+    margin-left: 140px;
+}
+
+#botones div{
+    margin-top: 70px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 100px;
+}
+div.Cuadrado{
+    
+    width: 50px;
+    height: 50px;
+    background-color: #eaeff1;
+    color: #7a7a7a;
+    font-weight: bold;
+}
+
+
+/* footer */
+
+
+ /* Mobile Responsivo */
+ @media only screen and (max-width: 768px) {
+
+    div.card-izquierda div.card-izquierda-img {
+        width: 100%;        
+    }
+
+    div.card-izquierda div.card-izquierda-contenido {    
+        width: 100%;
+    }
+
+    div.card-derecha div.card-derecha-img {
+        width: 100%;
+    }
+    div.card-derecha div.card-derecha-contenido {
+        width: 100%;
+    }
+
+    div.derecha{
+        width: 100%;    
+  
+    }
+
+    div.izquierda{
+        width: 100%;
+        
+    }
+   
+}
